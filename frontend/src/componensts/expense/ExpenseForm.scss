@@ -1,0 +1,57 @@
+@import "../../saas/color&fonts/Colors";
+@import "../../saas/color&fonts/Fonts";
+@import "../../saas//mixins/flex";
+.expense-form{
+    width: 30rem;
+    background-color: $white;
+    font-family: $cairo !important;
+    height: auto;
+    padding: 1rem;
+   margin: 5rem auto;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    div{
+        width: auto;
+        margin-bottom: 1rem;
+
+        label{
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        input{
+            border-radius: 1rem;
+            margin-left: 2rem;
+            padding: 0.5rem;
+            outline: none;
+            border: 1px solid $light-grey-2;
+            width: 14rem;
+            
+        }
+    }
+    .type-div{
+        width: auto;
+        @include flex-col;
+        align-items: flex-start;
+        justify-content: flex-start;
+        label{
+            margin-left: 5.3rem;
+        }
+        .types{
+            align-self: center !important;
+            width: 20rem;
+            margin-left: 2rem;
+            @include flex-row;
+            gap: 1rem;
+        
+            
+        margin-top: 1rem;
+        margin-inline: auto !important;
+        span{
+            background-color: $white;
+            border-radius: 0.1rem;
+            border: 1px solid $dark-black;
+            padding: 0.2rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        }
+    }
+}

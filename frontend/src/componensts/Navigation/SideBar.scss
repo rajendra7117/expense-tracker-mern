@@ -1,0 +1,58 @@
+@import "../../saas/color&fonts/Colors";
+@import "../../saas/color&fonts/Fonts";
+@import "../../saas/mixins/flex";
+
+.side-bar {
+  width: 13rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: $dark-black;
+  color: $white;
+  h1{
+    margin-bottom: 2.5rem;
+  }
+  .nav-bar {
+    border-top: 5px solid rgb(57, 54, 54);
+    border-bottom: 5px solid rgb(71, 68, 68);
+    height: 20rem;
+    width: 100%;
+    @include flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left !important;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+ 
+    a {
+      color: $light-grey;
+      text-decoration: none;
+
+      font-weight: 600;
+      @include flex;
+      width: 8rem;
+        text-align: left !important;
+       align-content: flex-start;
+       justify-content: flex-start;
+      
+      height: 3rem;
+      svg{
+        font-size: 1.2rem;
+      }
+      h4{
+        margin: 0 !important;
+        margin-left: 0.4rem !important;
+        
+      }
+
+    }
+    a.active {
+      color: $white;
+    }
+    a:hover {
+      color: $white;
+    }
+  }
+}

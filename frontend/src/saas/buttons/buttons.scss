@@ -1,0 +1,13 @@
+@import "../../saas/color&fonts/Colors";
+@import "../../saas/color&fonts/Fonts";
+@import "../../saas//mixins/flex";
+@mixin button-1 {
+    padding: 0.6rem;
+    border: 1px solid $light-green;
+    background-color: $light-green;
+    color: $dark-black;
+    font-weight: 600;
+    border-radius: 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+@import "../../saas/color&fonts/Colors";
+@import "../../saas/color&fonts/Fonts";
+@import "../../saas//mixins/flex";
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 13rem;
+    height: 6rem;
+    background-color: $primary-background;
+    @include flex2;
+    font-family: $anton;
+    .logo-div{
+     
+       
+        width: 6rem;
+        border-right: 2px solid $dark-black;
+        height: 100%;
+        padding: 0;
+        @include flex;
+        img{
+      
+            width: 2.5rem;
+        }
+    }
+    .message-div{
+        margin-left: 1.2rem;
+        font-size: 1.3rem;
+    }
+   
+
+}
+
+

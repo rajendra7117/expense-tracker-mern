@@ -1,0 +1,17 @@
+@import "../../saas/color&fonts/Colors";
+@import "../../saas/color&fonts/Fonts";
+@import "../../saas//mixins/flex";
+.monthly{
+    width: 100%;
+    height: auto;
+    @include flex-col;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    .bar-chart{
+
+      
+        width: 80%;
+        height: 90%;
+    }
+}

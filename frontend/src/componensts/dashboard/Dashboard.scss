@@ -1,0 +1,12 @@
+@import "../../saas/color&fonts/Colors";
+@import "../../saas/color&fonts/Fonts";
+@import "../../saas//mixins/flex";
+.dashboard{
+    width: 100%;
+    height: auto;
+    background-color: $secondar-background;
+    @include flex-col;
+    justify-content: space-around;
+  
+    font-family: inherit !important;
+}
