@@ -1,0 +1,51 @@
+@mixin form {
+    width: 30rem;
+    background-color: $white;
+    font-family: $cairo !important;
+    height: 30rem;
+    padding: 1rem;
+   margin: 5rem auto;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   div{
+    width: auto;
+    margin-bottom: 1rem;
+    @include flex-row;
+    justify-content: center;
+    position: relative;
+    height: 3.5rem;
+   
+
+    label{
+        font-size: 1.1rem;
+        font-weight: 700;
+        width: 6rem;
+    }
+    input{
+        border-radius: 1rem;
+        margin-left: 1.5rem;
+        padding: 0.5rem;
+        outline: none;
+        border: 1px solid $light-grey-2;
+        width: 14rem;
+        
+    }
+    input.valid{
+        border: 2px solid $light-green;
+    }
+    input.error{
+        border: 1px solid $red;
+    }
+    span.error-txt{
+        position: absolute;
+        bottom: -1rem;
+        left: 40%;
+        color: $red;
+    }
+
+
+   
+}
+div:nth-child(4){
+    margin-bottom: 3rem;
+}
+}

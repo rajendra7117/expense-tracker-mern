@@ -23,3 +23,11 @@ export const expenses = {
     },
   },
 };
+
+export const types = [
+  { type: "Food", id: 1 },
+  { type: "Travel", id: 2 },
+  { type: "Entertainment", id: 3 },
+  { type: "Shopping", id: 4 },
+  { type: "Others", id: 5 },
+];
