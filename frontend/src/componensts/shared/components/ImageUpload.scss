@@ -1,0 +1,27 @@
+@import '../../../saas//mixins/flex.scss';
+@import '../../../saas/color&fonts/Colors.scss';
+@import '../../../saas/buttons//buttons';
+
+.image-upload{
+
+    width: 20rem;
+    height: 25rem;
+    margin-top: 5rem;
+    .image-picker{
+        @include flex-col;
+        height: 12rem;
+        justify-content: space-around;
+        img{
+            height: 6rem;
+            
+            padding: 0.3rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        button{
+            @include button-1;
+            background-color: $secondar-background;
+            border: 1px solid $secondar-background;
+        }
+
+    }
+}

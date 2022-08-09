@@ -1,8 +1,23 @@
 @import "../../saas/color&fonts/Colors";
 @import "../../saas/color&fonts/Fonts";
 @import "../../saas//mixins/flex";
-@import "../../saas//mixins/form.scss";
+@import "../../saas//mixins/form";
+@import "../../saas/buttons/buttons";
 
 .form{
     @include form;
+    .form-buttons{
+        @include flex-col;
+        height: auto;
+        button{
+            @include button-1;
+            border-radius: 0.2rem;
+            margin-bottom: 1rem;
+        }
+        button:disabled{
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+    
 }

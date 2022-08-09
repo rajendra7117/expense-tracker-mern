@@ -34,7 +34,7 @@ export const useForm = (inputs) => {
 
   const inputHandler = useCallback(
     (inputValue, isValid, id) => {
-       console.log(inputValue, isValid, id)
+     
       dispatch({ type: "CHANGE", value:inputValue, isValid, id });
     },
     [dispatch]

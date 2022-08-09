@@ -7,6 +7,7 @@ import ExpensePage from "./routes/ExpensePage";
 import ProfilePage from "./routes/ProfilePage";
 import Header from "./componensts/Navigation/Header";
 import SideBar from "./componensts/Navigation/SideBar";
+import LoginPage from "./routes/LoginPage";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="auth" element={<AuthPage />} />
+          <Route path="/login" element={<LoginPage />}/>
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="expense" element={<ExpensePage />} />
           <Route path="profile" element={<ProfilePage />} />
