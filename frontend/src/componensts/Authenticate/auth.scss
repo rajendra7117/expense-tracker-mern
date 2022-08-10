@@ -1,8 +1,4 @@
-@import "../../saas/color&fonts/Colors";
-@import "../../saas/color&fonts/Fonts";
-@import "../../saas//mixins/flex";
-@import "../../saas//mixins/form";
-@import "../../saas/buttons/buttons";
+@import "../../App.scss";
 
 .form{
     @include form;

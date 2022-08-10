@@ -29,7 +29,18 @@
         font-size: 1.3rem;
     }
    
-
+.profile-img-div{
+    position: absolute;
+    right: 20rem;
+    top: 1rem;
+    img{
+        width: 4.5rem;
+        border-radius: 50%;
+        background-color: $dark-black;
+        border: 1px solid $dark-black;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    }
+}
 }
 
 

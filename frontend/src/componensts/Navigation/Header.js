@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import rupee from '../../images/rupee.png'
+import profileImg from "../../images/mental-health.png"
 const Header = () => {
   return (
     <div className='header'>
@@ -8,7 +9,10 @@ const Header = () => {
         <img src={rupee} alt="logo" />
         </div>
         <div className='message-div'>
-            <h3>Welcome!!</h3>
+            <h3>Welcome, Raj</h3>
+        </div>
+        <div className='profile-img-div'>
+            <img src={profileImg}/>
         </div>
     </div>
   )

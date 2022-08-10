@@ -1,0 +1,68 @@
+@import "../../App.scss";
+
+.home{
+    width: 100%;
+    @include flex-row;
+    justify-content: space-around;
+    background-color: $secondar-background;
+    font-family: $anton;
+    height: 100vh;
+    align-items: flex-start;
+    .par-1, .part-2{
+        width: 50%;
+    }
+    .part-1{
+     margin-top: 5rem;
+     @include flex-col;
+     text-align: left;
+     align-items: flex-start;
+     height: 24rem;
+     padding-left: 4rem;
+
+     h1{
+        font-size: 3rem;
+        margin: 0 !important;
+        letter-spacing: .3rem;
+        text-align: left;
+        line-height: 7rem;
+        h1{
+            margin: 0 !important;
+        }
+     }
+     button{
+        @include button-1;
+        width: 8rem;
+        background-color: $white;
+        border: 1px solid $dark-black;
+        margin-top: 0.5rem;
+        text-align: left;
+     }
+    }
+    .part-2{
+      
+        position: relative;
+        .img-card{
+         @include card;
+         width: 22rem;
+         position: absolute;
+         padding-right: 3rem;
+         @include flex-row;
+         justify-content: space-between;
+        }
+        img{
+            width: 10rem;
+        }
+        .card-1{
+            top:1rem;
+         right: 3rem;
+        }
+        .card-2{
+            top:14rem;
+            right: 9rem;
+        }
+        .card-3{
+            top: 26rem;
+            right: 15rem;
+        }
+    }
+}
