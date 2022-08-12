@@ -23,7 +23,7 @@ const register = async (req, res, next) => {
   }
   let user;
   try {
-    user = await User.create({ username, email, password });
+    user = await User.create({ username, email, password, expenses: [] });
   } catch (err) {
     return next(
       new HttpError("sorry, creating user failed, try again later", 404)
